@@ -1,0 +1,6 @@
+name: "星星之火, 可以燎原"
+version: 0.0.1
+
+# web 服务配置
+http:
+  port: 8080

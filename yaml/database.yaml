@@ -1,0 +1,16 @@
+# 这里的 mysql 是链接名称, 任意设置
+# 这里没用到
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: temp
+  username: root
+  password: root
+
+# 如果启用了 watch 服务, 这里会使用到
+watch:
+  host: 127.0.0.1
+  port: 3306
+  database: watch
+  username: root
+  password: root

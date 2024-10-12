@@ -1,0 +1,143 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+:root {
+  --sidebar-width: 210px;
+}
+
+.layout-sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  float: left;
+  background-color: #304156;
+}
+.layout-main {
+  width: calc(100% - var(--sidebar-width));
+  height: 100vh;
+  float: left;
+}
+
+.main-header {
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+.main-comtent {
+  float: left;
+  width: calc(100% - 10px);
+  height: calc(100vh - 65px);
+  overflow: hidden;
+  padding: 5px 5px 0 5px;
+}
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: var(--sidebar-width);
+  height: 100vh;
+}
+
+.el-menu-item {
+  background-color: #1f2d3d !important;
+}
+
+/* start */
+.navbar {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #f8f8f85c;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+
+  .hamburger-container {
+    line-height: 46px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    transition: background 0.3s;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.025);
+    }
+  }
+  .hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+
+  .hamburger.is-active {
+    transform: rotate(180deg);
+  }
+
+  .breadcrumb-container {
+    float: left;
+  }
+
+  .right-menu {
+    float: right;
+    height: 100%;
+    line-height: 50px;
+
+    &:focus {
+      outline: none;
+    }
+
+    .right-menu-item {
+      display: inline-block;
+      padding: 0 8px;
+      height: 100%;
+      font-size: 18px;
+      color: #5a5e66;
+      vertical-align: text-bottom;
+
+      &.hover-effect {
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.025);
+        }
+      }
+    }
+
+    .avatar-container {
+      margin-right: 30px;
+
+      .avatar-wrapper {
+        margin-top: 5px;
+        position: relative;
+
+        .user-avatar {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+        }
+
+        .el-icon-caret-bottom {
+          cursor: pointer;
+          position: absolute;
+          right: -20px;
+          top: 25px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+/* end */
+
+.frame {
+  width: 100%;
+  height: 100%;
+  border: none; /* 移除边框 */
+  overflow: auto; /* 允许内容滚动 */
+}

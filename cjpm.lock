@@ -1,0 +1,7 @@
+version = 0
+
+[requires]
+  jlog = {branch = "main", commitId = "d82c58a9e996f878845549de8d104bc1720d7cb2", git = "https://gitcode.com/service/jlog.git", version = "0.0.1"}
+  jorm = {branch = "main", commitId = "29dc93964fd443def5ca6d4c49f100eae37d4de6", git = "https://gitcode.com/service/jorm.git", version = "0.0.1"}
+  mysql = {branch = "main", commitId = "f99b87d6cc1882050cd82c5c230ea56fe18b048e", git = "https://gitcode.com/service/cangjie-mysql-driver.git", version = "0.0.1"}
+  yaml = {branch = "main", commitId = "4ce8a26dfbc1dd8d82e9f84d4f9c455104d4daf7", git = "https://gitcode.com/service/yaml.git", version = "0.0.1"}
